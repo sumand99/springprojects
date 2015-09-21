@@ -1,0 +1,40 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+ 
+	<bean id="helloBean" class="hello.HelloWorld">
+		<property name="name" value="SumanD" />
+	</bean>
+	
+	<bean id="customerService" class="hello.CustomerService">
+		<property name="name" value="Suman Dutta"  />
+		<property name="url" value="sumandutta.com"  />
+	</bean>
+ 
+ <!-- 	<bean id="hijackBeforeMethodBean" class="aop.HijackBeforeMethod" />
+ 	
+ 	<bean id="hijackAfterMethodBean" class="aop.HijackAfterMethod" />
+ 	
+ 	<bean id="hijackThrowExceptionBean" class="aop.HijackThrowException" />
+ 	
+ 	
+ 	<bean id="hijackAroundMethodBean" class="aop.HijackAroundMethod" />
+ 	
+ 	<bean id="customerServiceProxy" class="org.springframework.aop.framework.ProxyFactoryBean">
+ 			<property name="target" ref="customerService" />
+ 			
+ 			<property name="interceptorNames">
+			<list>
+	 	<value>hijackBeforeMethodBean</value>
+				<value>hijackThrowExceptionBean</value>
+				<value>hijackAfterMethodBean</value>
+				<value>hijackThrowExceptionBean</value>
+						
+				<value>hijackAroundMethodBean</value>
+			</list>
+		</property>
+ 	
+ 	</bean> -->
+ 	
+</beans>
